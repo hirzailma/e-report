@@ -3,3 +3,25 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
+.hero .col img {
+    width: 500px;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about.row img{
+    width: 50%;
+}
+
+@media screen and (max-width:510px){
+    .hero .col img{
+        width:100%
+    }
+    .about .col img{
+        width: 80%;
+    }
+}
