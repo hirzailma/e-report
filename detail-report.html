@@ -36,7 +36,7 @@
     <nav class="animate__animated animate__fadeInDown navbar navbar-expand-lg bg-primary-subtle py-4">
         <div class="container">
             <a class="navbar-brand d-flex align-item-center gap-2" href="#">
-                <img src="./assets/image/idn logo.png" alt="Logo" width="30"
+                <img src="./assets/image/Idn logo 2.jpg" alt="Logo" width="30"
                     class="d-inline-block align-text-top rounded">
                 <span class="fw-bold text-primary">IDN E-Report</span>
             </a>
@@ -62,13 +62,20 @@
                         <a class="nav-link text-primary" href="index.html#recent">Recent</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+                        <a class="nav-link text-primary" href="index.html#FAQ">FAQ</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="panduan.html">Guide</a>
+                    </li>
+                    <button class="btn btn-outline-secondary ms-auto" id="themeToggleBtn">
+                        🌙 Dark Mode
+                    </button>
 
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- content -->
     <div class="container">
@@ -148,7 +155,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-primary py-5 mt-5">
+    <footer class="bg-primary py-5">
         <div class="container">
             <div class="row justify-content-between row-gap-4 row-gap-md-0">
                 <div class="col-md-4 text-white">
@@ -166,6 +173,7 @@
                     <a class="text-white text-decoration-none footer-link" href="index.html#service">Service</a>
                     <a class="text-white text-decoration-none footer-link" href="index.html#recent">Recent</a>
                     <a class="text-white text-decoration-none footer-link" href="index.html#faq">FAQ</a>
+                    <a class="text-white text-decoration-none footer-link" href="panduan.html">Guide</a>
                 </div>
                 <div class="col-md-4 d-flex flex-column gap-2">
                     <h4 class="fw-bold text-white">Contact Us</h4>
@@ -191,6 +199,7 @@
             right</div>
     </footer>
 
+
     <!-- js bootstrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -210,6 +219,29 @@
             throttleDelay: 99
         });
     </script>
+
+    <script>
+  const toggleBtn = document.getElementById('themeToggleBtn');
+  const htmlTag = document.documentElement;
+
+  // Cek apakah user sebelumnya sudah memilih tema
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  htmlTag.setAttribute('data-bs-theme', savedTheme);
+  updateButtonText(savedTheme);
+
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = htmlTag.getAttribute('data-bs-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    htmlTag.setAttribute('data-bs-theme', newTheme);
+    localStorage.setItem('theme', newTheme); // Simpan pilihan user
+    updateButtonText(newTheme);
+  });
+
+  function updateButtonText(theme) {
+    toggleBtn.innerHTML = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+</script>
 
 </body>
 

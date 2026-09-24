@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="./assets/image/IDN.png" type="image/x-icon">
 
     <!-- css bootstrap -->
-    <link rel="stylesheet" href="">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -33,6 +32,7 @@
 
 <body>
     <!-- navbar -->
+
     <nav class="animate__animated animate__fadeInDown navbar navbar-expand-lg bg-primary-subtle py-4">
         <div class="container">
             <a class="navbar-brand d-flex align-item-center gap-2" href="#">
@@ -76,82 +76,110 @@
         </div>
     </nav>
 
-    <!-- content -->
-    <div class="container">
-        <div class="row my-4 gap-5 gap-lg-0">
-            <!-- main content -->
-            <div class="col-lg-8 mb-5">
-                <nav class="mb-5 mt-3 d-lg-none" caria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="reports.html">All reports</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Laporan keran masjid</li>
-                    </ol>
-                </nav>
-                <h1 class="fw-bold text-primary-emphasis">Laporan keran masjid rusak</h1>
-                <p class="text-secondary">By <a href="text-decoration-none fw-semibold">Hirza ilma</a> | 2 jam yang lalu
+
+    <!-- Panduan Pengguna -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Judul Halaman -->
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="fw-bold text-primary">Panduan Penggunaan IDN E-Report</h1>
+                <p class="text-secondary lead">
+                    Ikuti langkah-langkah mudah berikut untuk menyampaikan pengaduan atau aspirasi Anda secara cepat dan
+                    transparan.
                 </p>
+            </div>
 
-                <div style="height: 400px; object-fit: cover ; overflow:  hidden;">
-                    <img src="./assets/image/doomsday.jpg" class="img-fluid rounded shadow-sm" alt="">
+            <!-- Timeline / Step by Step Cards -->
+            <div class="row g-4">
+
+                <!-- Step 1 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm p-3 rounded-4">
+                        <div class="card-body text-center">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">
+                                1
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Tulis Laporan</h5>
+                            <p class="card-text text-muted small">
+                                Isi formulir pengaduan dengan judul yang jelas, deskripsi detail kejadian, serta pilih
+                                kategori laporan yang sesuai.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <p class="mt-4 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo quibusdam
-                    veritatis. Corrupti dicta itaque error aspernatur commodi quas, beatae, non in expedita excepturi
-                    autem facere illum ab magnam iure.</p>
-                <blockquote class="border-start border-3 border-primary p-3 fst-italic text-secondary">Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Laboriosam sunt incidunt vitae?</blockquote>
-
-                <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta iste aperiam
-                    odio consectetur laudantium, adipisci aliquam fuga aut error.</p>
-
-                <hr>
-                <h4 class="fw-semibold text-primary-emphasis">Komentar</h4>
-                <form action="">
-                    <div>
-                        <textarea rows="4" class="form-control shadow-sm"></textarea>
-                        <button class="btn btn-primary px-5 mt-4">Kirim <i class="fa-solid fa-paper-plane"></i></button>
+                <!-- Step 2 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm p-3 rounded-4">
+                        <div class="card-body text-center">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">
+                                2
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Unggah Bukti</h5>
+                            <p class="card-text text-muted small">
+                                Lampirkan foto atau dokumen pendukung yang valid agar laporan Anda dapat dengan cepat
+                                diverifikasi oleh tim admin.
+                            </p>
+                        </div>
                     </div>
-                </form>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm p-3 rounded-4">
+                        <div class="card-body text-center">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">
+                                3
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Proses Verifikasi</h5>
+                            <p class="card-text text-muted small">
+                                Laporan Anda akan ditindaklanjuti dan diverifikasi oleh pihak berwenang sesuai dengan
+                                alur penanganan yang berlaku.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="card h-100 border-0 shadow-sm p-3 rounded-4">
+                        <div class="card-body text-center">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">
+                                4
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Pantau Status</h5>
+                            <p class="card-text text-muted small">
+                                Cek perkembangan penanganan laporan Anda secara teratur melalui halaman daftar laporan
+                                atau fitur pencarian status.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
-            <!-- sidebar -->
-            <div class="col-lg-4">
-                <nav class="mb-5 mt-3 d-none d-lg-block" caria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="reports.html">All reports</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Laporan keran masjid</li>
-                    </ol>
-                </nav>
-
-                <div class="card mt-5">
-                    <div class="card-header fw-bold">
-                        Laporan serupa
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><i class="fa-solid fa-chevron-right text-primary me-2"></i>AC kelas
-                            tidak dingin</li>
-                        <li class="list-group-item"><i class="fa-solid fa-chevron-right text-primary me-2"></i>Kaca
-                            pembatas kelas retak</li>
-                        <li class="list-group-item"><i class="fa-solid fa-chevron-right text-primary me-2"></i>Wifi
-                            ngelag</li>
-                    </ul>
-                </div>
-
-                <div class="card mt-3">
-                    <div class="card-header fw-bold">
-                        Kategori
-                    </div>
-                    <div class="card-body">
-                        <span class="badge text-bg-success">Fasilitas</span>
-                        <span class="badge text-bg-danger">Report</span>
+            <!-- Info Tambahan / Call to Action -->
+            <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                <div class="col-12">
+                    <div
+                        class="p-4 bg-primary text-white rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-center justify-content-between">
+                        <div class="mb-3 mb-md-0 text-center text-md-start">
+                            <h5 class="fw-bold mb-1">Siap untuk Mengajukan Laporan?</h5>
+                            <p class="mb-0 small opacity-75">Pastikan data yang Anda masukkan sudah benar dan objektif.
+                            </p>
+                        </div>
+                        <a href="reports.html" class="btn btn-light text-primary fw-bold px-4 py-2 rounded-3">Buat
+                            Laporan Sekarang</a>
                     </div>
                 </div>
             </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-primary py-5">
@@ -198,6 +226,7 @@
             right</div>
     </footer>
 
+
     <!-- js bootstrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -217,7 +246,7 @@
             throttleDelay: 99
         });
     </script>
-
+    
     <script>
   const toggleBtn = document.getElementById('themeToggleBtn');
   const htmlTag = document.documentElement;
