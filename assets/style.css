@@ -34,6 +34,8 @@ footer{
     margin-top: 100px;
 }
 
+
+
 @media screen and (max-width:510px){
     .hero .col img{
         width:100%
@@ -41,4 +43,28 @@ footer{
     .about .col img{
         width: 80%;
     }
+}
+
+/* Styling Card Khusus Mode Dark */
+[data-bs-theme="dark"] .card {
+    background-color: #1e293b !important; /* Warna Slate Dark yang pas */
+    border: 1px solid #334155 !important; /* Border tipis yang elegan */
+}
+
+/* Memastikan teks deskripsi di card terbaca dengan sangat jelas */
+[data-bs-theme="dark"] .card .card-text {
+    color: #94a3b8 !important;
+}
+
+/* Styling Card Khusus Mode Light */
+[data-bs-theme="light"] .card {
+    background-color: #ffffff !important; /* Putih bersih */
+    border: 1px solid #e2e8f0 !important; /* Border tipis yang halus */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important; /* Efek bayangan lembut */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efek animasi halus saat di-hover */
+}
+
+/* Memastikan teks deskripsi di mode light terlihat jelas */
+[data-bs-theme="light"] .card .card-text {
+    color: #64748b !important; /* Warna abu-abu medium yang pas di mata */
 }
